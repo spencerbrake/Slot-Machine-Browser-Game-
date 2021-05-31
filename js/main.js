@@ -1,31 +1,33 @@
-//  When user opens game they see a slot machine 
+//  When user opens game they see a virtual slot machine 
 
-//  Slot machine has a lever, 3 rows with symbols in random order, 
-//  a credit amount listed, bet entry field set to blank(waiting for user input) 
+//  Slot machine has 6 boxes in a row with symbols in random order, 
+//  a credit amount listed, bet amount set to blank(waiting for user to click bet) 
 
-//  a user should be able to enter a bet amount <= credit amount 
 
-// once a bet amount is enetered, then user should be able to click the lever to spin the wheels
+// once bet button is clicked, 20 will be added to bet amount, 
+//then user should be able to click spin button to start the game.
 
 //  spin will generate random symbols on each click
 
-//  wheels should be checked for any winnning patterns on each spin
+//  wheels should be checked for any matching symbols on each spin
 
-//  winning patterns should be hightlighted on the screen
+//  matching symblos should be hightlighted on the screen
 
-//  "Winner" message should display with winning patters.
+//  "Winner" message should display if user wins.
 
-// "Try again" message if no winning patterns 
+// "Try again" message if user loses & credit amout > 0
 
 //  credit amount should be adjusted based on if player wins 
 
-//  hightlighted winning patterns should resets on each new spin 
 
 //  bet amount should reset back to blank after each spin 
 
-//  A user cant spin untill the bet amount is entered 
+//  A user cant spin untill the bet is clicked at least once. 
+// bet button can be clicked until full credit amount is gone.
+//winning doubles the bet amount entered
 
-//  game over message if credit = 0
+
+//  'game over' message if credit = 0
 
 
 
