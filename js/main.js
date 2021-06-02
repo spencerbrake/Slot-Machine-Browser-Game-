@@ -32,8 +32,6 @@ const slotEls = {
     slot3: document.querySelector("#pos3 img"),
     slot4: document.querySelector("#pos4 img"),
     slot5: document.querySelector("#pos5 img"),
-    slot6: document.querySelector("#pos6 img"),
-    slot7: document.querySelector("#pos7 img"),
 }
 
 const totalCredit = document.getElementById('creditbox');
@@ -72,10 +70,32 @@ function startGame(){
     res.slot3 = getRandomIcon();
     res.slot4 = getRandomIcon();
     res.slot5 = getRandomIcon();
-    res.slot6 = getRandomIcon();
-    res.slot7 = getRandomIcon();
 
-    // if()  - had to pause cause I was stuck trying to figure out the if/else statement to determine the winner 
+    // if()  - changed from 7 to 5 slots to make logic for if/else statement less complex 
+    if ((res.slot1 === res.slot2) && (res.slot2 === res.slot3) && (res.slot3 === res.slot4)) {
+        winner = true;
+    } else if ((res.slot2 === res.slot3) && (res.slot3 === res.slot4) && (res.slot4 === res.slot5)) {
+        winner = true;
+    } else if ((res.slot1 === res.slot3) && (res.slot3 === res.slot4) && (res.slot4 === res.slot5)) {
+        winner = true;
+    } else if ((res.slot1 === res.slot2) && (res.slot2 === res.slot4) && (res.slot4 === res.slot5)) {
+        winner = true;
+    } else if ((res.slot1 == res.slot2) && (res.slot2 === res.slot3) && (res.slot3 === res.slot5)) {
+        winner = true;
+    } else if ((res.slot1 === res.slot2) && (res.slot2 === res.slot3) && (res.slot3 === res.slot4) && (res.slot4 === res.slot5)){
+        winner = true;
+    } else {
+        winner = false;
+    }
 
+    if (winner === true) {
+        credits = credits + bet * 2;
+        winMsg = "YOU WON!!"
+    } else {
+        credits = credits + bet / 2;
+        winMsg = 'YOU LOST!'
+    }
+
+    render();
 
 }
