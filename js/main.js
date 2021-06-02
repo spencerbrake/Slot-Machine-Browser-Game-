@@ -1,4 +1,4 @@
-/*----- constants -----*/
+
 
 const icons = {
     seven: 'imgs/7-symbol.jpg',
@@ -8,25 +8,23 @@ const icons = {
     coin: 'imgs/coin.jpg',
     grape: 'imgs/grapes.jpg',
     lemon: 'imgs/lemon.jpg',
-    plum: 'imgs/plum.jpg',
 }
 
 
 
 
-/*----- app's state (variables) -----*/
 
 let credits = 500;
 let bet = 0;
-let slots;
-let winner = "";
+let res;
+let winner;
  
 
-/*----- cached element references -----*/
 
-let betBtn = document.getElementById('betbtn');
-let spinBtn = document.getElementById('spinbtn');
-let resetBtn = document.getElementById('resetbtn');
+
+const betBtn = document.getElementById('betbtn');
+const spinBtn = document.getElementById('spinbtn');
+const resetBtn = document.getElementById('resetbtn');
 
 const slotEls = {
     slot1: document.querySelector("#pos1 img"),
@@ -44,7 +42,7 @@ const winMsg = document.getElementById('winlose');
 
 
 
-/*----- event listeners -----*/
+
 
 betBtn.addEventListener('click', addBet);
 spinBtn.addEventListener('click', startGame);
@@ -54,16 +52,30 @@ resetBtn.addEventListener('click', init);
 
 
 
-/*----- functions -----*/
 
 
 
 
 
-function randomIcon(){
-    const icons = ['seven', 'bar', 'bell', 'cherry', 'coin', 'grape', 'lemon', 'plum'];
-    const randomIndex = Math.floor(Math.random() * 8)
 
-    return icons[randomIndex]
+function getRandomIcon(){
+    const options = ['seven', 'bar', 'bell', 'cherry', 'coin', 'grape', 'lemon'];
+    const randomIndex = Math.floor(Math.random() * 7)
+
+    return options[randomIndex]
    
+};
+
+function startGame(){
+    res.slot1 = getRandomIcon();
+    res.slot2 = getRandomIcon();
+    res.slot3 = getRandomIcon();
+    res.slot4 = getRandomIcon();
+    res.slot5 = getRandomIcon();
+    res.slot6 = getRandomIcon();
+    res.slot7 = getRandomIcon();
+
+    // if()  - had to pause cause I was stuck trying to figure out the if/else statement to determine the winner 
+
+
 }
