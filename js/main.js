@@ -81,8 +81,8 @@ function render(){
 
 
 function getRandomIcon(){
-    const options = ['seven', 'bar', 'bell', 'cherry', 'coin', 'grape', 'lemon'];
-    const randomIndex = Math.floor(Math.random() * 7)
+    const options = ['seven', 'bar', 'bell', 'cherry', 'coin', 'lemon'];
+    const randomIndex = Math.floor(Math.random() * 6)
 
     return options[randomIndex]
    
@@ -102,7 +102,7 @@ function startGame(){
     }
     
 
-    // if()  - changed from 7 to 5 slots to make logic for if/else statement less complex 
+
     if ((slots.slot1 === slots.slot2) && (slots.slot2 === slots.slot3) && (slots.slot3 === slots.slot4)) {
         winner = true;
     } else if ((slots.slot2 === slots.slot3) && (slots.slot3 === slots.slot4) && (slots.slot4 === slots.slot5)) {
