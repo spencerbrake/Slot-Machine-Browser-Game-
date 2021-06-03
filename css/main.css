@@ -3,16 +3,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-size: 65px;
-
+    background-size: cover;
 }
 
 div {
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     background-color: #dfb729;
     overflow: hidden;
     color: #0f0f0e; 
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    border: 3px solid #0c0c0c;
 }
 
 h3 {
@@ -28,21 +28,22 @@ h3 {
 
 span * {
         width: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         height: 120px;
         display: inline-block;
-        border-width: 10px;
+        border-width: 5px;
         border-style: solid;
         border-color: #080808;
     }
 
 #header {
     font-size: 62px;
-    border: #050505;
-    border-style: solid;
-    border-width: 4px;
-    border-left: #FFD594;
-    border-right: #FFD594;
     background-color: #dfb729;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 
@@ -56,22 +57,13 @@ button {
     color: 	#fbfffb;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #dfb729;
 }
 
-
-/* #creditbox, #betbox {
-    display: inline;
-    width: 50px;
-    border: 7px solid #505050;
-    color: #5a5f6b;
-    background-color: white;
-    border-radius: none;
-    margin: 10px 20px 10px 20px;
-} */
 
 
 #winlose {
@@ -82,4 +74,16 @@ button:hover {
     background-color: #dfb729;
     border-radius: 3px;
     margin: 10px 0px 10px 0px;
+}
+
+#creditbox, #betbox {
+    display: block;
+    width: 300px;
+    border: 2px solid #0c0c0c;
+    color: #0a0a0a;
+    background-color: #dfb729;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
 }

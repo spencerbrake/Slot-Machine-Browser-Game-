@@ -95,7 +95,7 @@ function startGame(){
     slots.slot4 = getRandomIcon();
     slots.slot5 = getRandomIcon();
 
-    if ( bet === 0){
+    if ( bet <= 0){
         spinBtn.disabled = true;
     } else {
         spinBtn.disabled = false;
