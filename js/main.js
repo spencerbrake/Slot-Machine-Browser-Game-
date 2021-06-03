@@ -11,17 +11,12 @@ const icons = {
 }
 
 
-
-
-
 let credits;
 let bet;
 let slots;
 let winner;
 let message;
  
-
-
 
 const betBtn = document.getElementById('betbtn');
 const spinBtn = document.getElementById('spinbtn');
@@ -40,11 +35,9 @@ const totalBet = document.getElementById('betbox');
 let resMsg = document.getElementById('winlose');
 
 
-
 betBtn.addEventListener('click', addBet);
 spinBtn.addEventListener('click', startGame);
 resetBtn.addEventListener('click', init);
-
 
 init();
 
@@ -71,14 +64,10 @@ function render(){
     totalBet.innerText = "BET: $" + bet;
    
 
-
     for (let slot in slots){
         slotEls[slot].src = icons[slots[slot]];
     }
 }
-
-
-
 
 function getRandomIcon(){
     const options = ['seven', 'bar', 'bell', 'cherry', 'coin', 'lemon'];
@@ -101,7 +90,6 @@ function startGame(){
         spinBtn.disabled = false;
     }
     
-
 
     if ((slots.slot1 === slots.slot2) && (slots.slot2 === slots.slot3) && (slots.slot3 === slots.slot4)) {
         winner = true;
