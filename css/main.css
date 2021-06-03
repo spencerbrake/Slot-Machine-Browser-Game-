@@ -18,10 +18,10 @@ div {
 h3 {
     display: inline-block;
     width: 200px;
-    color: #5a5f6b;
+    color: #0c0c0c;
     background-color: white;
     text-align: left;
-    border: 7px solid #505050;
+    border: 7px solid #0a0a0a;
     border-radius: none;
     margin: center;
     }
@@ -32,7 +32,7 @@ span * {
         display: inline-block;
         border-width: 10px;
         border-style: solid;
-        border-color: #505050;
+        border-color: #080808;
     }
 
 #header {
@@ -76,10 +76,10 @@ button:hover {
 
 #winlose {
     display: inline-block;
-    width: 100px;
-    border: 7px solid #505050;
-    color: #5a5f6b;
-    background-color: white;
+    width: 300px;
+    border: 3px solid #0c0c0c;
+    color: #0a0a0a;
+    background-color: #dfb729;
     border-radius: 3px;
-    margin: -5px 0px -10px 0px;
+    margin: 10px 0px 10px 0px;
 }
