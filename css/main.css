@@ -46,8 +46,6 @@ span * {
     padding: 5px;
 }
 
-
-
 button {
     height: 130px;
     width: 130px;
@@ -63,8 +61,6 @@ button {
 button:hover {
     background-color: #dfb729;
 }
-
-
 
 #winlose {
     display: inline-block;
